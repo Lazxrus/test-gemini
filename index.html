@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de la Marca - Editor de Videos</title>
+    <!-- Incluye Tailwind CSS desde el CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuente Inter de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-gradient-hero {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url("https://images.unsplash.com/photo-1620286105423-f273673f4581?q=80&w=2070&auto=format&fit=crop");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Encabezado y Navegación -->
+    <header class="sticky top-0 z-50 bg-white bg-opacity-90 backdrop-blur-sm shadow-sm py-4">
+        <nav class="container mx-auto px-4 md:px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900 tracking-tight">Tu Marca</a>
+            <div class="space-x-4 font-medium">
+                <a href="#inicio" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Inicio</a>
+                <a href="#servicios" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Servicios</a>
+                <a href="#contacto" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio (Hero) -->
+    <section id="inicio" class="bg-gradient-hero flex items-center justify-center min-h-screen py-16">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-4">
+                Videos Cortos que <br class="hidden sm:inline"> Capturan la Atención
+            </h1>
+            <p class="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8">
+                Como editor de video especializado en formatos cortos, ayudo a marcas y creadores a contar historias impactantes y generar un alto engagement.
+            </p>
+            <a href="#contacto" class="inline-block bg-gray-900 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-700 transition-colors duration-300 transform hover:scale-105">
+                Trabajemos Juntos
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Mis Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                <!-- Tarjeta de Edición de Videos -->
+                <div class="bg-gray-100 rounded-2xl p-8 shadow-lg text-center transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Edición de Shorts</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Transformo tu contenido de video largo en clips cortos, dinámicos y listos para plataformas como TikTok, Reels o YouTube Shorts. Me encargo de la edición, subtítulos, efectos y sonido para maximizar el impacto.
+                    </p>
+                    <a href="#contacto" class="inline-block text-gray-900 font-semibold border-2 border-gray-900 py-2 px-6 rounded-full hover:bg-gray-900 hover:text-white transition-colors duration-300">
+                        Más Información
+                    </a>
+                </div>
+                <!-- Tarjeta de Consultoría -->
+                <div class="bg-gray-100 rounded-2xl p-8 shadow-lg text-center transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Consultoría de Edición</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Si eres un editor que busca pulir sus habilidades, mi consultoría te ofrece una guía personalizada para mejorar tu flujo de trabajo, técnicas y creatividad. Aprende a destacar en el mundo de la edición.
+                    </p>
+                    <a href="#contacto" class="inline-block text-gray-900 font-semibold border-2 border-gray-900 py-2 px-6 rounded-full hover:bg-gray-900 hover:text-white transition-colors duration-300">
+                        Agenda una Sesión
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios (Opcional, pero recomendado) -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Lo que Dicen mis Clientes</h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <blockquote class="text-xl md:text-2xl font-medium text-gray-700 mb-4 italic">
+                    "Su trabajo de edición no solo mejoró nuestros videos, sino que nos ayudó a duplicar el engagement en TikTok. Es un profesional increíble."
+                </blockquote>
+                <cite class="text-lg font-medium text-gray-900">
+                    - Nombre del Cliente, Fundador de Empresa
+                </cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">Ponte en Contacto</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+                ¿Listo para elevar tus videos o mejorar tus habilidades de edición? Llena el formulario a continuación para hablar sobre tu proyecto.
+            </p>
+            <div class="max-w-2xl mx-auto bg-gray-100 rounded-2xl p-8 shadow-lg">
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                        <input type="text" id="name" name="name" class="w-full rounded-md border-gray-300 shadow-sm focus:ring-gray-900 focus:border-gray-900 p-2">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="w-full rounded-md border-gray-300 shadow-sm focus:ring-gray-900 focus:border-gray-900 p-2">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" class="w-full rounded-md border-gray-300 shadow-sm focus:ring-gray-900 focus:border-gray-900 p-2"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-gray-900 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-700 transition-colors duration-300 transform hover:scale-105">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="py-8 bg-gray-900 text-white text-center">
+        <p>&copy; 2024 Tu Marca. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para el desplazamiento suave de la navegación -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId) {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
