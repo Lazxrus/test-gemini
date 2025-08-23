@@ -10,7 +10,9 @@
     <!-- Fuente Inter de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -62,19 +64,46 @@
         <div class="container mx-auto px-4 md:px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Mis Servicios</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-                <!-- Tarjeta de Edición de Videos -->
+                <!-- EDICION DE SHORTS -->
                 <div
-                    class="bg-gray-100 rounded-2xl p-8 shadow-lg text-center transition-transform transform hover:scale-105 hover:shadow-xl">
+                    class="bg-gray-100 rounded-2xl p-8 shadow-lg text-center hover:shadow-xl">
                     <h3 class="text-2xl font-semibold mb-4 text-gray-900">Edición de Shorts</h3>
                     <p class="text-gray-700 mb-6 leading-relaxed">
                         Transformo tu contenido de video largo en clips cortos, dinámicos y listos para plataformas como
                         TikTok, Reels o YouTube Shorts. Me encargo de la edición, subtítulos, efectos y sonido para
                         maximizar el impacto.
                     </p>
-                    <a href="#contacto"
-                        class="inline-block text-gray-900 font-semibold border-2 border-gray-900 py-2 px-6 rounded-full hover:bg-gray-900 hover:text-white transition-colors duration-300">
-                        Más Información
-                    </a>
+
+                <!-- DROPDOWN INIT -->
+                    <div class="relative inline-block text-left">
+                        <button id="dropdownButton" type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 transition-transform hover:scale-105 focus:outline-none">
+                            Selecciona un servicio
+                            <i class="fa-solid fa-angle-down px-2 py-1"></i>
+                        </button>
+                        <div id="dropdownMenu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                            <div class="py-1">
+                                <a href="#diario" class="block px-4 py-2 text-sm text-gray-700 w-full text-center transition-transform rounded-md hover:scale-105 hover:bg-gray-100 glow-hover-diario glint-hover-diario">Uso Diario</a>
+                                <a href="#frios" class="block px-4 py-2 text-sm text-gray-700 w-full text-center transition-transform rounded-md hover:scale-105 hover:bg-gray-100 glow-hover-frio glint-hover-frio">Climas Fríos</a>
+                                <a href="#calidos" class="block px-4 py-2 text-sm text-gray-700 w-full text-center transition-transform rounded-md hover:scale-105 hover:bg-gray-100 glow-hover-calido glint-hover-calido">Climas Cálidos</a>
+                                <a href="#ocasiones" class="block px-4 py-2 text-sm text-gray-700 w-full text-center transition-transform rounded-md hover:scale-105 hover:bg-gray-100 glow-hover-especiales glint-hover-especiales">Ocasiones Especiales</a>
+                                <a href="#noche" class="block px-4 py-2 text-sm text-gray-700 w-full text-center transition-transform rounded-md hover:scale-105 hover:bg-gray-100 glow-hover-noche glint-hover-noche">Perfumes de Noche</a>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        const btn = document.getElementById('dropdownButton');
+                        const menu = document.getElementById('dropdownMenu');
+                        btn.addEventListener('click', () => {
+                            menu.classList.toggle('hidden');
+                        });
+                        document.addEventListener('click', (e) => {
+                            if (!btn.contains(e.target) && !menu.contains(e.target)) {
+                                menu.classList.add('hidden');
+                            }
+                        });
+                    </script>
+                <!-- DROPDOWN END -->
+                
                 </div>
                 <!-- Tarjeta de Consultoría -->
                 <div
